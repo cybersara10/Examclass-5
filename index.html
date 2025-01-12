@@ -698,6 +698,7 @@
         }
 
         showQuestion();
+        document.addEventListener('DOMContentLoaded', (event) => { if (window.google) { window.google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element'); document.querySelectorAll('.goog-te-banner-frame').forEach(function(node){ node.style.display = 'none'; }); } });
     </script>
 </body>
 </html>
