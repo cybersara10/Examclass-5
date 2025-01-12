@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 1 Driving Exam</title>
     <style>
-       body {
+      body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -50,6 +50,7 @@
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Ensure proper spacing */
 }
 
 .btn {
@@ -81,8 +82,8 @@
 .correct-arrow {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
     display: inline-block; /* Ensure correct display */
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -94,11 +95,15 @@
         max-height: 80px;
     }
 
+    .answer-container {
+        flex-direction: row; /* Adjust layout for mobile */
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .correct-arrow {
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-           display: inline-block;
+        width: 20px;
+        height: 20px;
     }
 }
 
