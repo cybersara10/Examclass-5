@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 5 Driving Exam</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
@@ -81,6 +81,8 @@
             width: 20px;
             height: 20px;
             margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         @media only screen and (max-width: 600px) {
@@ -91,7 +93,19 @@
             .question-image {
                 max-height: 300px;
             }
+
+            .correct-arrow {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+            }
+
+            .answer-container label {
+                display: flex;
+                align-items: center;
+            }
         }
+
 
     </style>
 </head>
@@ -155,363 +169,7 @@
             },
 
 
-  { 
-                question: "5-What must the driver of a heavey vehicule keep in mind about the response time for air brakes as compared to hydraulic brakes?",
-            
-                answers: [
-                    { text: "Air brakes respond as quickly as hydraulic brakes", correct: false },
-                    { text: "Air brakes respond more quickly than hydraulic brakes", correct: false },
-                    { text: "Air brakes respond more slowly than do hydraulic brakes ", correct: true },
-                    { text: "Air brakes respond more quickly than hydraulic brakes on a vehicule that has over three compressed air reservoir", correct: false }
-                ] 
-            },
-
-  { 
-                question: "6-Heavy vehicules equipped with air brakes have a compressed air gauge. What pressure doe the gauge measure?",
-            
-                answers: [
-                    { text: "the pressure of compressed air in the brake lines", correct: true },
-                    { text: "the pressure of compressed air in the turbocharger", correct: false },
-                    { text: "the pressure of compressed air in the brake chamber", correct: false },
-                    { text: "the pressure of the air in the atmosphere", correct: false }
-                ] 
-            },
-
-
-
-
-
-          { 
-                question: "7-At wich pressure does the low air-pressure warning come on?",
-                
-                answers: [
-                    { text: "at 448 kPa (65 psi)", correct: false },
-                    { text: "at 571 kPa (75 psi)", correct: false },
-                    { text: "at 482 kPa (70 psi)", correct: false },
-                    { text: "at 380 kPa (55 psi)", correct: true }
-                ] 
-            },
-
-
-
-          { 
-                question: "8-What is the only sure methode of checking the brake adjustment?",
-                
-                answers: [
-                    { text: "observe the amount of air required to apply the parking brake", correct: false },
-                    { text: "observe the condition of the brake cylinders and each wheel", correct: false },
-                    { text: "observe the travel (movement) of the push rods at each wheel", correct: true },
-                    { text: "observe the travel (movement) of the brake pedal", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "9-Complate the following: When the low air pressure light comes on, this indicate that ...?",
-                
-                answers: [
-                    { text: "there's too much air in the service brake line", correct: false },
-                    { text: "the servie brake is working properly", correct: false },
-                    { text: "the service brakes are likely to stop working very shortly", correct: true },
-                    { text: "there's too much air in the emergency brake line", correct: false }
-                ] 
-            },
-
-
-
-
-          { 
-                question: "10-When must the parking brake be applied?",
-                image: "10.png",
-                answers: [
-                    { text: "each time the driver leaves the vehicule", correct: true},
-                    { text: "whenever the rear wheels of the vehicule start to skid", correct: false },
-                    { text: "when the driver is starting the engin on a slop", correct: false },
-                    { text: "on downhill slope when the retarders can not be used ", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "11-Which illustration shows the spring brake chamber activated by the parking brake ?",
-                image: "11.png",
-                
-                answers: [
-                    { text: "D", correct: true },
-                    { text: "B", correct: false },
-                    { text: "C", correct: false },
-                    { text: "A", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "12-When the driver pushes in the brake pedal, the brakes clamp on the wheels ?",
-                image: "12.png",
-                answers: [
-                    { text: "because of the compressed air that has filled the brake chambers", correct: true },
-                    { text: "because of the compressed air that is released from the brake chambers", correct: false },
-                    { text: "because of the fluid that is released from the brake chambers", correct: false },
-                    { text: "because of the fluid that has filled the brake chambers", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "13-When must the parking brake be applied?",
-                
-                answers: [
-                    { text: "when the driver is going down a hill and the retarders can not be used", correct: false },
-                    { text: "each time the driver leaves the vehicule", correct: true },
-                    { text: "when the driver is starting the engine on a slop", correct: false },
-                    { text: "when the vehicule's rear wheels start to skid", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "14-Choose the number that points to a push rod?",
-                
-                answers: [
-                    { text: "number 2", correct: true },
-                    { text: "number 3", correct: false },
-                    { text: "number 1", correct: false },
-                    { text: "number 4", correct: false }
-                ] 
-            },
-
-{ 
-                question: "15-?",
-                
-                answers: [
-                    { text: "?", correct: false },
-                    { text: "?", correct: false },
-                    { text: "?", correct: false },
-                    { text: "?", correct: true }
-                ] 
-            },
-
-
-          { 
-                question: "16-Which road sign indicates the obligation on drivers to check their brakes in the area designed for this?",
-                image: "16.png",
-                answers: [
-                    { text: "C", correct: false },
-                    { text: "A", correct: true },
-                    { text: "D", correct: false },
-                    { text: "B", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "17?",
-                image: "17.png",
-                answers: [
-                    { text: "all the wheels on the tractor-trailer will lock up immediately", correct: false },
-                    { text: "the driver must turn off the engine to stop", correct: false },
-                    { text: "the driver must stop as soon as possible ", correct: true},
-                    { text: "the driver should avoid braking and downshift several times to reach the lowest gear", correct: false}
-                ] 
-            },
-
-
-          { 
-                question: "18-When can poorly vehicule adjusted brakes be ineffective?",
-                
-                answers: [
-                    { text: "only when the vehicule is moving at a speed of 90 km/h or more", correct: false },
-                    { text: "all of the time", correct: true},
-                    { text: "only when the vehicule is handling a maximum load", correct: false },
-                    { text: "only when the vehicule is going down a long steep hill", correct: false }
-                ] 
-            },
-
-
-          { 
-                question: "19?",
-                 image: "19.png",
-                answers: [
-                    { text: "the brake drum", correct: false },
-                    { text: "the compressed air chamber", correct: false },
-                    { text: "the brake shoes", correct: false },
-                    { text: "the push rod", correct: true }
-                ] 
-            },
-
-
-          { 
-                question: "20-heavey vehicules equipped with an air brake system heve a brake air pressure gauge, this unit measures?",
-                
-                answers: [
-                    { text: "the pressure of the compressed air in the brake lines", correct: false },
-                    { text: "the pressure of the compressed air in the brake chamber", correct: true},
-                    { text: "the pressure of the air in the reservoirs", correct: false },
-                    { text: "the pressure of the compressed air in the turbocharger", correct: false }
-                ] 
-            },
-
-
-
-
-
-
-            { 
-                question: "21-During a pre-departure inspection of a vehicule equipped with air brakes, What is the correct way to check the amount of air needed to apply the service brakes completely ?", 
-                
-                answers: [
-                   
-                    { text: "1)", list: ["apply the parking brake", "turn off the engine", "pump the brake pedal several times", "apply mederate pressure on the brake pedal", "Wash the gauge to see the drop in air pressure in the brake system"], correct: false },
-
-
-                 { text: "2)", list: ["apply the parking brake", "bring the pressure in the brake system up to its maximum", " turn off the engine", "watch the gauge to see the drop in air pressure in the brake system", "get down from the vehicule and check the air pressure"], correct: false },
-
-                   
-                   { text: "3)", list: ["take off parking brake", "turn off the engine", "empty the brake system of its air"," restart the engine",  "calculate the time needed to bring the air pressure brake up to its maximum"], correct: false },
-
-                    { text: "4)", list: ["take off the parking brake ", "bring the pressure in the brake system up to its maximum", "turn off the engine", "push down all the way on the brake pedal", "watch the gauge to see the drop in air pressure in the brake system"], correct: true },
-
-
-
-                ] 
-           
-            },
-        
-
-  { 
-                question: "22-What can be the result of overloading a vehicule?", 
-                 
-                answers: [
-                    { text: "breaking of the push rod", correct: false },
-                    { text: "overuse of the compressor ", correct: false },
-                    { text: "cracking of the brake chamber", correct: false },
-                    { text: "less effective brakes", correct: true },
-                
-                ] 
-           
-            },
-              { 
-                question: "23-What actually makes brakes ineffective?", 
-            
-                answers: [
-                    { text: "poor adjustment of the brakes", correct: true },
-                    { text: "too much air pressure in the brake system", correct: false },
-                    { text: "the presence of four compressed air reservoirs", correct: false },
-                    { text: "brake linings made of steel alloy", correct: false },
-                   
-                ] 
-           
-            },
-              { 
-                question: "24-What happens when a driver applies the parking brake control?", 
-                 image: "24.png",
-                answers: [
-                    { text: "Air is released from the parking brake chamber, which allows the spring to act on the push rod", correct: true },
-                    { text: "Air is released from the brake chamber, which frees the push rod", correct: false },
-                    { text: "Air fills the brake chamber, which allows the spring to act on the push rod", correct: false },
-                    { text: "Air fills the brake chamber, which frees the push rod", correct: false },
-                  
-                ] 
-           
-            },
-              { 
-                question: "25-What will be the result if you pump the brake pedal?", 
-            
-                answers: [
-                    { text: "the brake will come out of adjustment", correct: true },
-                    { text: "the air pressure in the brake chamber will rise", correct: false },
-                    { text: "the air pressure will drop in the service reservoirs", correct: true},
-                    { text: "the brake linings will quickly heat up and may overheat", correct: false },
-                 
-                ] 
-           
-            },
-              { 
-                question: "26-Complete the following correctly. When the driver pushes on the brake pedal, the brakes clamp on the wheels.. ?",
-                 image: "26.png",
-                answers: [
-                    { text: "because of the compressed air that has filled the brake chambers", correct: true },
-                    { text: "because of the fluid that filled the brake chambers", correct: false },
-                    { text: "because of the compressed air that is released from the brake chambers", correct: false },
-                    { text: "because of the fluid that is released from the brake chambers", correct: false },
-                  
-                ] 
-           
-            },
-              { 
-                question: "27-?", 
-                
-                answers: [
-                    { text: "Internal combustion engine", correct: true },
-                    { text: "?", correct: false },
-                    { text: "?", correct: false },
-                    { text: "?", correct: false }
-                  
-                ] 
-           
-            },
-              { 
-                question: "28-When can poorly adjusted brakes be ineffective?", 
-            
-                answers: [
-                    { text: "only when the vehicule is going down a long hill", correct: false },
-                    { text: "only when the vehicule is moving at speed above 90 km/h", correct: false },
-                    { text: "only when the vehicule is hauling a maximum load", correct: false },
-                    { text: "at all times ", correct: true }
-                   
-                ] 
-           
-            },
-              { 
-                question: "29-Which of these brake chambers acts on the parking brake?", 
-                
-                answers: [
-                    { text: "the disk brake chamber", correct: false},
-                    { text: "the servie brake chamber", correct: false },
-                    { text: "the spring brake chamber", correct: true },
-                    { text: "the drum brake chamber", correct: false }
-                 
-                ] 
-           
-            },
-              { 
-                question: "30-In the diagram, which number identifies the push rod?", 
-                 image: "t1.jpg",
-                answers: [
-                    { text: "Number 3", correct: true },
-                    { text: "Number 2", correct: false },
-                    { text: "Number 1", correct: false }
-            
-                  
-                ] 
-           
-            },
-              { 
-                question: "31-The air-pressure rgulator (or governor) controls the operation of the compressor in order to maintain the air pressure levels in the reservoirs. what in the difference in air pressure that wil trigger the starting and stopping of the compressor?", 
-                 image: "t1.jpg",
-                answers: [
-                    { text: "a difference of 138 kPa (20psi)", correct: true },
-                    { text: "a difference of 20 kPa (3psi)", correct: false },
-                    { text: "a difference of 207 kPa (30psi)", correct: false },
-                    { text: "a difference of 69 kPa (10psi)", correct: false }
-                   
-                ] 
-           
-            },
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
         ];
 
