@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 5 Driving Exam</title>
+    <title>Class 1 Driving Exam</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,9 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            flex-direction: column;
         }
-
         #quiz-container {
             background: #fff;
             padding: 20px;
@@ -26,31 +23,24 @@
             width: 100%;
             max-width: 600px;
         }
-
         .header-title {
             font-size: 24px;
             color: #007bff;
             margin-bottom: 20px;
             text-align: center;
         }
-
         .question-number {
             font-size: 16px;
             margin-bottom: 10px;
             text-align: right;
         }
-
         .question-text {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .answer-container {
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
         }
-
         .btn {
             background-color: #007bff;
             color: white;
@@ -61,55 +51,28 @@
             margin: 5px;
             font-size: 14px;
         }
-
         .btn:hover {
             background-color: #0056b3;
         }
-
         .btn.hidden {
             display: none;
         }
-
         .question-image {
-            width: 100%;
+            width: 30%;
             max-height: 100px;
             object-fit: cover;
             margin-bottom: 20px;
         }
-
         .correct-arrow {
             width: 20px;
             height: 20px;
             margin-right: 10px;
-            vertical-align: middle;
         }
-
-        @media only screen and (max-width: 600px) {
-            #quiz-container {
-                padding: 15px;
-            }
-
-            .question-image {
-                max-height: 300px;
-            }
-
-            .correct-arrow {
-                width: 15px;
-                height: 15px;
-                margin-right: 5px;
-            }
-
-            .answer-container label {
-                display: flex;
-                align-items: center;
-            }
-        }
-
     </style>
 </head>
 <body>
     <div id="quiz-container">
-        <h1 class="header-title">Class 5 Driving Exam</h1>
+        <h1 class="header-title">Class 1 Driving Exam Simulator</h1>
         <div class="question-number" id="question-number"></div>
         <div id="question-text"></div>
         <div id="answers"></div>
@@ -121,25 +84,509 @@
 
     <script>
         const questions = [
-            {
+
+
+{ 
                 question: "1-?",
+                
                 answers: [
                     { text: "?", correct: false },
                     { text: "?", correct: false },
                     { text: "?", correct: false },
                     { text: "?", correct: true }
-                ]
+                ] 
             },
-            {
-                question: "2-Which one of the following items must be checked as part of pre-departure inspection?",
+
+
+
+
+
+
+            { 
+                question: "2-Which one of the following items must be checked as part of pre-departure inspection?", 
                 answers: [
                     { text: "the amount of play in the push rods", correct: false },
                     { text: "the pressures at which the compressor cuts in and stops working", correct: true },
                     { text: "the locking out on the slack adjustment lever", correct: false },
                     { text: "the wear on the brake linings", correct: false }
-                ]
-            }
+                ] 
+            },
+
+
+            { 
+                question: "3-Which one of the following items must be checked as part of pre-departure inspection?",
+            
+                answers: [
+                    { text: "the performance of the slack adjuster", correct: true },
+                    { text: "the pressures at which the safety valve opens ", correct: false },
+                    { text: "the performance of the air purifier", correct: false },
+                    { text: "the air-tightness (absence of leaks) in the brake system", correct: false }
+                ] 
+            },
+
+
+  { 
+                question: "4-In the course of your pre-departure inspection of a heavy vehicule that you own, you did not find any defect in the brake system or any other component. Y are starting out on trip to a town 200 km away. What information are you required to enter in the inspection report?",
+
+            
+                answers: [
+                    { text: "1-No entry need be made because there was no defect found", correct: false },
+
+                    { text: "2", list: ["the date of the inspection", "an indication that no defect was found", " the vehicule's licence plate number", "the location of first collection or delivery stop of the trip", "the location of the last collection or delivery stop of the trip"], correct: false },
+
+                    { text: "3", list: ["the date of the inspection", "the vehicule's licence plate number", "An indication that no defect was found", "your signature"], correct: true },
+                
+                ] 
+            },
+
+
+  { 
+                question: "5-What must the driver of a heavey vehicule keep in mind about the response time for air brakes as compared to hydraulic brakes?",
+            
+                answers: [
+                    { text: "Air brakes respond as quickly as hydraulic brakes", correct: false },
+                    { text: "Air brakes respond more quickly than hydraulic brakes", correct: false },
+                    { text: "Air brakes respond more slowly than do hydraulic brakes ", correct: true },
+                    { text: "Air brakes respond more quickly than hydraulic brakes on a vehicule that has over three compressed air reservoir", correct: false }
+                ] 
+            },
+
+  { 
+                question: "6-Heavy vehicules equipped with air brakes have a compressed air gauge. What pressure doe the gauge measure?",
+            
+                answers: [
+                    { text: "the pressure of compressed air in the brake lines", correct: true },
+                    { text: "the pressure of compressed air in the turbocharger", correct: false },
+                    { text: "the pressure of compressed air in the brake chamber", correct: false },
+                    { text: "the pressure of the air in the atmosphere", correct: false }
+                ] 
+            },
+
+
+
+
+
+          { 
+                question: "7-At wich pressure does the low air-pressure warning come on?",
+                
+                answers: [
+                    { text: "at 448 kPa (65 psi)", correct: false },
+                    { text: "at 571 kPa (75 psi)", correct: false },
+                    { text: "at 482 kPa (70 psi)", correct: false },
+                    { text: "at 380 kPa (55 psi)", correct: true }
+                ] 
+            },
+
+
+
+          { 
+                question: "8-What is the only sure methode of checking the brake adjustment?",
+                
+                answers: [
+                    { text: "observe the amount of air required to apply the parking brake", correct: false },
+                    { text: "observe the condition of the brake cylinders and each wheel", correct: false },
+                    { text: "observe the travel (movement) of the push rods at each wheel", correct: true },
+                    { text: "observe the travel (movement) of the brake pedal", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "9-Complate the following: When the low air pressure light comes on, this indicate that ...?",
+                
+                answers: [
+                    { text: "there's too much air in the service brake line", correct: false },
+                    { text: "the servie brake is working properly", correct: false },
+                    { text: "the service brakes are likely to stop working very shortly", correct: true },
+                    { text: "there's too much air in the emergency brake line", correct: false }
+                ] 
+            },
+
+
+
+
+          { 
+                question: "10-When must the parking brake be applied?",
+                image: "10.png",
+                answers: [
+                    { text: "each time the driver leaves the vehicule", correct: true},
+                    { text: "whenever the rear wheels of the vehicule start to skid", correct: false },
+                    { text: "when the driver is starting the engin on a slop", correct: false },
+                    { text: "on downhill slope when the retarders can not be used ", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "11-Which illustration shows the spring brake chamber activated by the parking brake ?",
+                image: "11.png",
+                
+                answers: [
+                    { text: "D", correct: true },
+                    { text: "B", correct: false },
+                    { text: "C", correct: false },
+                    { text: "A", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "12-When the driver pushes in the brake pedal, the brakes clamp on the wheels ?",
+                image: "12.png",
+                answers: [
+                    { text: "because of the compressed air that has filled the brake chambers", correct: true },
+                    { text: "because of the compressed air that is released from the brake chambers", correct: false },
+                    { text: "because of the fluid that is released from the brake chambers", correct: false },
+                    { text: "because of the fluid that has filled the brake chambers", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "13-When must the parking brake be applied?",
+                
+                answers: [
+                    { text: "when the driver is going down a hill and the retarders can not be used", correct: false },
+                    { text: "each time the driver leaves the vehicule", correct: true },
+                    { text: "when the driver is starting the engine on a slop", correct: false },
+                    { text: "when the vehicule's rear wheels start to skid", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "14-Choose the number that points to a push rod?",
+                
+                answers: [
+                    { text: "number 2", correct: true },
+                    { text: "number 3", correct: false },
+                    { text: "number 1", correct: false },
+                    { text: "number 4", correct: false }
+                ] 
+            },
+
+{ 
+                question: "15-?",
+                
+                answers: [
+                    { text: "?", correct: false },
+                    { text: "?", correct: false },
+                    { text: "?", correct: false },
+                    { text: "?", correct: true }
+                ] 
+            },
+
+
+          { 
+                question: "16-Which road sign indicates the obligation on drivers to check their brakes in the area designed for this?",
+                image: "16.png",
+                answers: [
+                    { text: "C", correct: false },
+                    { text: "A", correct: true },
+                    { text: "D", correct: false },
+                    { text: "B", correct: false }
+                ] 
+            },
+
+
+          { 
+                question: "17?",
+                image: "17.png",
+                answers: [
+                    { text: "all the wheels on the tractor-trailer will lock up immediately", correct: false },
+                    { text: "the driver must turn off the engine to stop", correct: false },
+                    { text: "the driver must stop as soon as possible ", correct: true},
+                    { text: "the driver should avoid braking and downshift several times to reach the lowest gear", correct: false}
+                ] 
+            },
+
+
+          { 
+                question: "18-When can poorly vehicule adjusted brakes be ineffective?",
+                
+                answers: [
+                    { text: "only when the vehicule is moving at a speed of 90 km/h or more", correct: false },
+                    { text: "all of the time", correct: true},
+                    { text: "only when the vehicule is handling a maximum load", correct: false },
+                    { text: "only when the vehicule is going down a long steep hill", correct: true }
+                ] 
+            },
+
+
+          { 
+                question: "19?",
+                 image: "19.png",
+                answers: [
+                    { text: "the brake drum", correct: false },
+                    { text: "the compressed air chamber", correct: false },
+                    { text: "the brake shoes", correct: false },
+                    { text: "the push rod", correct: true }
+                ] 
+            },
+
+
+          { 
+                question: "20-heavey vehicules equipped with an air brake system heve a brake air pressure gauge, this unit measures?",
+                
+                answers: [
+                    { text: "the pressure of the compressed air in the brake lines", correct: false },
+                    { text: "the pressure of the compressed air in the brake chamber", correct: true},
+                    { text: "the pressure of the air in the reservoirs", correct: false },
+                    { text: "the pressure of the compressed air in the turbocharger", correct: false }
+                ] 
+            },
+
+
+
+
+
+
+            { 
+                question: "21-During a pre-departure inspection of a vehicule equipped with air brakes, What is the correct way to check the amount of air needed to apply the service brakes completely ?", 
+                
+                answers: [
+                   
+                    { text: "1)", list: ["apply the parking brake", "turn off the engine", "pump the brake pedal several times", "apply mederate pressure on the brake pedal", "Wash the gauge to see the drop in air pressure in the brake system"], correct: false },
+
+
+                 { text: "2)", list: ["apply the parking brake", "bring the pressure in the brake system up to its maximum", " turn off the engine", "watch the gauge to see the drop in air pressure in the brake system", "get down from the vehicule and check the air pressure"], correct: false },
+
+                   
+                   { text: "3)", list: ["take off parking brake", "turn off the engine", "empty the brake system of its air"," restart the engine",  "calculate the time needed to bring the air pressure brake up to its maximum"], correct: false },
+
+                    { text: "4)", list: ["take off the parking brake ", "bring the pressure in the brake system up to its maximum", "turn off the engine", "push down all the way on the brake pedal", "watch the gauge to see the drop in air pressure in the brake system"], correct: true },
+
+
+
+                ] 
+           
+            },
+        
+
+  { 
+                question: "22-What can be the result of overloading a vehicule?", 
+                 
+                answers: [
+                    { text: "breaking of the push rod", correct: false },
+                    { text: "overuse of the compressor ", correct: false },
+                    { text: "cracking of the brake chamber", correct: false },
+                    { text: "less effective brakes", correct: true },
+                
+                ] 
+           
+            },
+              { 
+                question: "23-What actually makes brakes ineffective?", 
+            
+                answers: [
+                    { text: "poor adjustment of the brakes", correct: true },
+                    { text: "too much air pressure in the brake system", correct: false },
+                    { text: "the presence of four compressed air reservoirs", correct: false },
+                    { text: "brake linings made of steel alloy", correct: false },
+                   
+                ] 
+           
+            },
+              { 
+                question: "24-What happens when a driver applies the parking brake control?", 
+                 image: "24.png",
+                answers: [
+                    { text: "Air is released from the parking brake chamber, which allows the spring to act on the push rod", correct: true },
+                    { text: "Air is released from the brake chamber, which frees the push rod", correct: false },
+                    { text: "Air fills the brake chamber, which allows the spring to act on the push rod", correct: false },
+                    { text: "Air fills the brake chamber, which frees the push rod", correct: false },
+                  
+                ] 
+           
+            },
+              { 
+                question: "25-What will be the result if you pump the brake pedal?", 
+            
+                answers: [
+                    { text: "the brake will come out of adjustment", correct: true },
+                    { text: "the air pressure in the brake chamber will rise", correct: false },
+                    { text: "the air pressure will drop in the service reservoirs", correct: true},
+                    { text: "the brake linings will quickly heat up and may overheat", correct: false },
+                 
+                ] 
+           
+            },
+              { 
+                question: "26-Complete the following correctly. When the driver pushes on the brake pedal, the brakes clamp on the wheels.. ?",
+                 image: "26.png",
+                answers: [
+                    { text: "because of the compressed air that has filled the brake chambers", correct: true },
+                    { text: "because of ", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                  
+                ] 
+           
+            },
+              { 
+                question: "27-?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+              { 
+                question: "Which of the following is a type of engine?", 
+                 image: "t1.jpg",
+                answers: [
+                    { text: "Internal combustion engine", correct: true },
+                    { text: "Hydraulic engine", correct: false },
+                    { text: "Wind turbine", correct: false },
+                    { text: "Solar panels", correct: false },
+                    { text: "Types of combustion engines include:", list: ["1. Gasoline engines", "2. Diesel engines", "3. Gas turbine engines"], correct: false }
+                ] 
+           
+            },
+
+
         ];
+
+
+
+
+
 
         const questionNumberElement = document.getElementById('question-number');
         const questionTextElement = document.getElementById('question-text');
@@ -153,7 +600,7 @@
         function showQuestion() {
             const question = questions[currentQuestionIndex];
             questionNumberElement.innerText = `Question ${currentQuestionIndex + 1} / ${questions.length}`;
-
+            
             questionTextElement.innerHTML = '';
 
             if (question.image) {
@@ -163,7 +610,7 @@
                 imageElement.classList.add('question-image');
                 questionTextElement.appendChild(imageElement);
             }
-
+            
             const questionText = document.createElement('div');
             questionText.classList.add('question-text');
             questionText.textContent = question.question;
@@ -187,7 +634,12 @@
 
                 const label = document.createElement('label');
                 label.htmlFor = `answer${index}`;
-                label.innerHTML = answer.text;
+
+                if (answer.list) {
+                    label.innerHTML = `<strong>${answer.text}</strong><ol>${answer.list.map(item => `<li>${item}</li>`).join('')}</ol>`;
+                } else {
+                    label.innerHTML = answer.text;
+                }
 
                 answerContainer.appendChild(input);
                 answerContainer.appendChild(label);
@@ -196,28 +648,6 @@
 
             prevButton.classList.toggle('hidden', currentQuestionIndex === 0);
             nextButton.textContent = currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next';
-        }
-
-        function showCorrectArrow() {
-            const question = questions[currentQuestionIndex];
-            const answerContainers = answersElement.querySelectorAll('.answer-container');
-
-            answerContainers.forEach((container, index) => {
-                const label = container.querySelector('label');
-                const correctArrowImg = label.querySelector('.correct-arrow');
-
-                if (correctArrowImg) {
-                    correctArrowImg.remove();
-                }
-
-                if (question.answers[index].correct) {
-                    const arrowImg = document.createElement('img');
-                    arrowImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Green_Arrow_Down.svg/512px-Green_Arrow_Down.svg.png';
-                    arrowImg.alt = 'Correct Arrow';
-                    arrowImg.classList.add('correct-arrow');
-                    label.prepend(arrowImg);
-                }
-            });
         }
 
         function showResult() {
@@ -243,9 +673,30 @@
             }
         });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            showQuestion();
-        });
+        function showCorrectArrow() {
+            const question = questions[currentQuestionIndex];
+            const answerContainers = answersElement.querySelectorAll('.answer-container');
+
+            answerContainers.forEach((container, index) => {
+                const label = container.querySelector('label');
+                const input = container.querySelector('input');
+                const correctArrowImg = label.querySelector('.correct-arrow');
+
+                if (correctArrowImg) {
+                    correctArrowImg.remove(); // Remove existing arrow
+                }
+
+                if (question.answers[index].correct) {
+                    const arrowImg = document.createElement('img');
+                    arrowImg.src = 'http://www.clipartbest.com/cliparts/dir/6o5/dir6o5ReT.png';
+                    arrowImg.alt = 'Correct Arrow';
+                    arrowImg.classList.add('correct-arrow');
+                    label.prepend(arrowImg);
+                }
+            });
+        }
+
+        showQuestion();
     </script>
 </body>
 </html>
